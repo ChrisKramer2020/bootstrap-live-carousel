@@ -5,7 +5,122 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <title>y</title>
 </head>
-<body>
-  <h1>Hello, World!</h1>
+<!-- Practicing Bootstrap. This is more PC friendly!
+    Dedicated to: my everything, Misha. Made it as a surprise for him! *^*
+
+    Features:
+    Bootstrap carousel slideshow!
+     Images with sources linked in the JS TAB.
+    Custom cursor.
+    And while less noticeable, my old fading backgrounds trick to have something covering the background.  ; w ;
+
+    As most codes on SL, you can edit this and make your own. -->
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <title>Using Bootstrap!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+    </head>
+    <body>
+    <!-- Linking to external files. -->
+
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <!-- Setting the items in each slide. -->
+    </ol>
+        <!-- First image. -->
+      <div class="carousel-inner">
+      <div class="item active"
+          style="max-width: 623px; margin: 0 auto">
+      <img class="img-responsive center-block">
+      <img src="http://68.media.tumblr.com/626b45bec3fdcba8b3f8900afe9fed55/tumblr_obd8facUVy1udu0z9o1_500.jpg" alt="Slideshow image here." style="width:100%; height:100%">
+        <div class="carousel-caption">
+        <h3>BY VINNY. </h3>
+            <p> Using carousel bootstrap + custom cursor.
+            </p>
+            </div>
+      </div>
+
+        <!-- Second image. -->
+      <div class="item"
+          style="max-width: 623px; margin: 0 auto">
+        <img class="img-responsive center-block">
+        <img src="http://68.media.tumblr.com/8ec40cf02c7c5cb72c1a7c1051f81308/tumblr_oseryvjPu61uvo26yo1_1280.jpg" alt="Slideshow image here." style="width:100%;height:100%">
+        <div class="carousel-caption">
+            <p> Using carousel bootstrap + custom cursor.
+            </p>
+            </div>
+      </div>
+
+        <!-- Third image. -->
+      <div class="item"
+          style="max-width: 623px; margin: 0 auto">
+           <img class="img-responsive center-block">
+            <img src="http://image.ibb.co/m2mYba/horrendous.jpg" alt="Slideshow image here." style="width:100%;height:100%">
+        <div class="carousel-caption">
+            <p> Using carousel bootstrap + custom cursor.
+            </p>
+            </div>
+      </div>
+
+        <!-- Fourth image. -->
+      <div class="item"
+          style="max-width: 623px; margin: 0 auto">
+            <img class="img-responsive center-block">
+            <img src="http://image.ibb.co/dEgA6a/imgbb22.jpg" alt="Slideshow image here." style="width:100%;height:100%">
+        <div class="carousel-caption">
+            <p> Using carousel bootstrap + custom cursor.
+            </p>
+            </div>
+            </div>
+
+        <!-- Fifth image. -->
+        <div class="item"
+          style="max-width: 623px; margin: 0 auto">
+             <img class="img-responsive center-block">
+             <img src="http://image.ibb.co/dyVgCF/imgbb55.jpg" alt="Slideshow image here." style="width:100%;height:100%">
+        <div class="carousel-caption">
+            <p> Using carousel bootstrap + custom cursor.
+            </p>
+            </div>
+            </div>
+
+      <!-- Sixth image. -->
+        <div class="item"
+          style="max-width: 623px; margin: 0 auto">
+             <img class="img-responsive center-block">
+             <img src="http://image.ibb.co/fnZisF/imgbb66.jpg" alt="Slideshow image here." style="width:100%;height:100%">
+        <div class="carousel-caption">
+            <h2> FOR MISHA. </h2>
+            <p> Using carousel bootstrap + custom cursor.
+            </p>
+            </div>
+            </div>
+
+      <!-- Slideshow controls! -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-backward"></span>
+      <span class="sr-only">pre</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-forward"></span>
+      <span class="sr-only">next</span>
+    </a>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

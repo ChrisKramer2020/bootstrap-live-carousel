@@ -11,3 +11,37 @@ body {
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
 }
+
+html,
+body {
+font-family: 'Arial';
+font-size: 13pt;
+background-color: #794433;
+padding: 0px;
+margin: 0px;
+/* Custom cursor. */
+cursor: url('https://68.media.tumblr.com/f1bb017f9e5e00b6568f1baed6189b0b/tumblr_inline_n6qzh1sc1d1s97ld5.png'), auto;
+
+/* Webkit starts here. */
+-webkit-animation-moz-animation: background 5s cubic-bezier(1,0,0,1) infinite; animation: background 5s cubic-bezier(1,0,0,1) infinite;
+}
+
+@-webkit-keyframes background      {
+    0% { background-color: #E8BAA8; }
+    33% { background-color: #F4BEA9; }
+}
+
+@keyframes background {
+    50% { background-color: #794433; }
+    50% { background-color: #593225; }
+}
+
+p {
+    color:#fff;
+}
+
+.carousel .item > img {
+margin: 0 auto;
+display: block;
+line-height: 1;
+}
