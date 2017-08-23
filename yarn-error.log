@@ -1,0 +1,36 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add browser-sync stylelint stylelint-config-standard surge eslint eslint-config-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node eslint-plugin-standard babel-core babel-eslint babel-loader babel-polyfill babel-preset-es2015 babel-preset-stage-0 webpack webpack-dev-server webpack-merge browser-sync-webpack-plugin extract-text-webpack-plugin html-webpack-plugin file-loader css-loader style-loader postcss-loader raw-loader autoprefixer node-sass sass-loader --save-dev
+
+PATH: 
+  ./bin:/usr/local/bin:/usr/local/sbin:/Users/juanlopez/.dotfiles/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+
+Yarn version: 
+  0.17.6
+
+Node version: 
+  8.3.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "deploy": "yarn build && surge ./public --domain bootstrap-live-carousel.chris.surge.sh",
+      "start": "webpack-dev-server",
+      "prebuild": "rm -f public/index.html public/app-*.js public/vendor-*.js public/screen-*.css",
+      "build": "NODE_ENV=production webpack --progress"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: read ETIMEDOUT
+      at _errnoException (util.js:1022:11)
+      at TLSWrap.onread (net.js:610:25)
